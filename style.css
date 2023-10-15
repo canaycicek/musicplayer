@@ -58,6 +58,7 @@ img{
     display: flex;
     text-align: start;
     display: none;
+    overflow-x: hidden;
 }
 .cardList .card-header{
     width: 280px;
@@ -135,3 +136,23 @@ img{
     color: rgb(232, 232, 232);
     transition: all 0.2s ease-in-out;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
