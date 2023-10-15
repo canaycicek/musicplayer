@@ -10,22 +10,51 @@
 </head>
 <body>
     <div class="container">
-        <img id="music-image" src="" alt="">
-        <audio id="audio" src=""></audio>
-        <div id="music-details">
-            <p class="title"></p>
-            <p class="singer"></p>
-        </div>
-        <div class="times">
-            <span id="current-time">0:00 /</span>
-            <span id="finished-time"></span>
-        </div>
-        <input type="range" class="form-range" id="progressBar" value="0">
-        <div id="controls">
-            <i id="prev" class="fa-solid fa-backward-step"></i>
-            <i id="play" class="fa-solid fa-play"></i>
-            <i id="pause" class="fa-solid fa-pause dissplayed"></i>
-            <i id="next" class="fa-solid fa-forward-step"></i>
+        <div class="card">
+            <div class="card-header">
+                <img id="music-image" src="" alt="">
+                <audio id="audio" src=""></audio>
+                <div id="music-details">
+                    <p class="title"></p>
+                    <p class="singer"></p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="progress">
+                    <input type="range" class="form-range" id="progressBar" value="0">
+                    <div class="times">
+                        <span id="currentTime">0:00 /</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+                <div id="mainControls">
+                    <button class="btn btn-primary">
+                        <i id="prev" class="fa-solid fa-backward-step otherBtn"></i>
+                    </button>
+                    <button class="btn btn-primary btnPlay">
+                        <i id="play" class="fa-solid fa-play centerBtn"></i>
+                    </button>
+                    <button class="btn btn-primary btnPause dissplayed">
+                        <i id="pause" class="fa-solid fa-pause centerBtn"></i>
+                    </button>
+                    <button class="btn btn-primary">
+                        <i id="next" class="fa-solid fa-forward-step otherBtn"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="volumeControls">
+                    <i id="volumeUp" class="fa-solid fa-volume-high vol"></i>
+                    <i id="volumeDown" class="fa-solid fa-volume-xmark vol dissplayed"></i>
+                    <input type="range" id="volumeBar" value="100" max="100">
+                </div>
+                <button class="btnListOpen btnMenu">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+                <button class="btnListClose btnMenu dissplayed">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+            </div>
         </div>
     </div>
     

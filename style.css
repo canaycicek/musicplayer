@@ -1,30 +1,102 @@
 body{
     background-color: rgb(39, 39, 39);
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-#controls i{
-    font-size: 30px;
-    cursor: pointer;
-    margin: 0 1rem;
-}
-#music-details{
-    font-size: 20px;
-}
-#progressBar{
-    margin: 1rem 0 2rem 0;
-    width: 15%;
+img{
+    width: 100%;
 }
 .dissplayed{
     display: none;
 }
-img{
-    width: 20%;
+.card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.container{
+.card-header{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 6rem;
+    font-size: 22px;
 }
-
+.card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.progress{
+    width: 100%;
+}
+#progressBar{
+    cursor: pointer;
+}
+.times{
+    display: flex;
+    justify-content: space-between;
+}
+#mainControls button{
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(52, 52, 52);
+    border: 2px solid rgb(70, 70, 70);
+    margin: 0 10px;
+    color: #bababade;
+}
+#mainControls button:hover{
+    background-color: rgba(186, 186, 186, 0.312);
+    transition: all 0.2s ease-in-out;
+}
+.centerBtn{
+    font-size: 40px;  
+    padding: 10px;
+}
+.otherBtn{
+    font-size: 30px;
+    padding: 10px;
+}
+#progressBar{
+    width: 100%;
+}
+.card-footer i {
+    font-size: 25px;
+    cursor: pointer;
+}
+.card-footer button{
+    cursor: pointer;
+    background-color: rgba(207, 207, 207, 0.361);
+    color: #fff;
+    border: 1px solid rgb(69, 69, 69);
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+}
+.card-footer button:hover{
+    background-color: rgba(207, 207, 207, 0.635);
+    transition: all 0.2s ease-in-out;
+}
+.vol{
+   color: rgba(179, 179, 179, 0.576); 
+   border: none;
+}
+.vol:hover{
+    color: rgb(179, 179, 179);
+    transition: all 0.2s ease-in-out;
+}
+#volumeBar{
+    cursor: pointer;
+}
