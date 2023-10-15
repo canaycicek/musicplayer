@@ -1,102 +1,137 @@
+li{
+    list-style-type: none;
+}
 body{
     background-color: rgb(39, 39, 39);
-    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100vh;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 img{
-    width: 100%;
+    width: 370px;
+    margin-top: 4px;
 }
 .dissplayed{
     display: none;
 }
-.card{
-    width: 400px;
+.cardApp{
+    width: 403px; /* 700px */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    column-gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.324);
+    color: #fff;
+}
+.list-group{
+    min-width: 210px;
+}
+.song{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 280px;
+}
+.song:hover{
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+}
+.bgDark{
+    background-color: black;
+}
+.cardList{
+    background-color: transparent;
+    width: 500px;
+    height: 689px;
+    color: #fff;
+    display: flex;
+    text-align: start;
+    display: none;
+}
+.cardList .card-header{
+    width: 280px;
+}
+.cardList ul li{
+    background-color: transparent;
+    color: #fff;
+    border: none;
 }
 .card-header{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 22px;
 }
-.card-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.music-details{
+    pointer-events: none;
 }
-.card-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
-}
-.progress{
-    width: 100%;
-}
-#progressBar{
-    cursor: pointer;
+.title, .singer{
+    pointer-events: none;
 }
 .times{
     display: flex;
     justify-content: space-between;
+    pointer-events: none;
 }
-#mainControls button{
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: rgb(52, 52, 52);
-    border: 2px solid rgb(70, 70, 70);
-    margin: 0 10px;
-    color: #bababade;
-}
-#mainControls button:hover{
-    background-color: rgba(186, 186, 186, 0.312);
-    transition: all 0.2s ease-in-out;
+#mainControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
 }
 .centerBtn{
-    font-size: 40px;  
-    padding: 10px;
+    font-size: 30px;
+    background-color: rgb(98, 98, 98);
+    padding: 15px 19px;
+    border: 3px solid rgb(113, 113, 113);
+    border-radius: 50%;
+    cursor: pointer;
 }
 .otherBtn{
-    font-size: 30px;
-    padding: 10px;
-}
-#progressBar{
-    width: 100%;
-}
-.card-footer i {
-    font-size: 25px;
+    font-size: 20px;
+    background-color: rgb(98, 98, 98);
+    border: 3px solid rgb(113, 113, 113);
     cursor: pointer;
+    border-radius: 50%;
+    padding: 11px 15px;
 }
-.card-footer button{
-    cursor: pointer;
-    background-color: rgba(207, 207, 207, 0.361);
-    color: #fff;
-    border: 1px solid rgb(69, 69, 69);
-    border-radius: 7px;
-    width: 40px;
-    height: 40px;
-}
-.card-footer button:hover{
-    background-color: rgba(207, 207, 207, 0.635);
+.centerBtn:hover , .otherBtn:hover{
+    background-color: rgba(98, 98, 98, 0.429);
     transition: all 0.2s ease-in-out;
 }
-.vol{
-   color: rgba(179, 179, 179, 0.576); 
-   border: none;
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.vol:hover{
-    color: rgb(179, 179, 179);
-    transition: all 0.2s ease-in-out;
-}
-#volumeBar{
+.menu{
+    font-size: 21px;
     cursor: pointer;
+    background-color: rgb(98, 98, 98);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.volumeControls{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+#volumeUp, #volumeDown{
+    color: rgb(181, 181, 181);
+    cursor: pointer;
+}
+#volumeUp:hover , #volumeDown:hover{
+    color: rgb(232, 232, 232);
+    transition: all 0.2s ease-in-out;
 }
